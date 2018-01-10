@@ -2,8 +2,8 @@ CROSS_HOST="i686-w64-mingw32"
 inherit cross
 
 NAME="mingw64-i686-libmspub0.1"
-VERSION=0.1.2
-RELEASE=2
+VERSION=0.1.3
+RELEASE=1
 CATEGORY="Devel"
 SUMMARY="MS Publisher format library for Win32 toolchain"
 DESCRIPTION="Libmspub is library providing ability to interpret and import
@@ -18,5 +18,3 @@ src_install() {
 	cd ${B}
 	cyginstall bin_PROGRAMS=
 }
-
-KEEP_LA_FILES="none"
